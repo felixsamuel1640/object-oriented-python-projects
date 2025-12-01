@@ -1,100 +1,46 @@
-# Object-Oriented Python Projects
+# 🏫 Python OOP Student Class Project
 
-A collection of Python projects built while learning and practicing 
-**Object-Oriented Programming (OOP)**.  
-This repository includes simple but foundational examples demonstrating 
-concepts such as **classes**, **inheritance**, **constructor chaining**, 
-**method overriding**, and more.
+## Project Overview
 
-These projects were created as part of my journey transitioning into tech 
-and strengthening my Python fundamentals.
+This is a simple Python project demonstrating the core principles of 
+**Object-Oriented Programming (OOP)**, specifically focusing on classes, 
+instance attributes, and class attributes.
 
----
+The project defines a `Student` class used to manage student data within 
+the "Tech Academy" context.
 
-## 🚀 Projects in This Repository
+## ⚙️ Key OOP Concepts Demonstrated
 
-### 1. **Basic Inheritance – Animal Sounds**
-A simple program showing how child classes inherit from a parent class and 
-override methods.
+The code demonstrates the following concepts:
 
-```python
-class Animal:
-    def sound(self):
-        return "This animal makes a sound"
+1.  **Class Definition:** Defining the structure for the `Student` object.
+2.  **Class Attribute:** `school` is a class attribute, shared by all 
+instances of `Student`.
+3.  **Constructor (`__init__`):** Used to initialize the instance 
+attributes (`name` and `age`) when a new student object is created.
+4.  **Instance Attributes:** `name` and `age` are unique to each student 
+instance.
+5.  **Instance Method (`info`):** A function that operates on an 
+instance's data.
 
-class Dog(Animal):
-    def sound(self):
-        return "Dog barks"
+## 🚀 How to Run the Code
 
-class Cat(Animal):
-    def sound(self):
-        return "Cat meows"
+### Prerequisites
 
-dog = Dog()
-cat = Cat()
+You only need Python 3 installed on your system.
 
-print(dog.sound()) 
-print(cat.sound())
-2. Multiple Inheritance – Device Info
-A demonstration of how a class can inherit features from more than one 
-parent.
-class Device:
-    def device_info(self):
-        return "I am a device."
+### Running the Script
 
-class Computer:
-    def computer_info(self):
-        return "I am a computer."
+1.  Save the code provided as a file named `student_data.py`.
+2.  Open your terminal or command prompt.
+3.  Navigate to the folder where you saved the file.
+4.  Run the script using the Python interpreter:
 
-class Laptop(Device, Computer):
-    def laptop_info(self):
-        return "I am a laptop."
+    ```bash
+    python student_data.py
+    ```
 
-laptop = Laptop()
-print(laptop.device_info())
-print(laptop.computer_info())
-print(laptop.laptop_info())
-3. Multilevel Inheritance – Electronics Hierarchy
-Shows how inheritance can be extended across multiple levels.
-class Electronic:
-    def info(self):
-        return "This is an electronic item."
+### Expected Output
 
-class Phone(Electronic):
-    def phone_info(self):
-        return "This is a phone."
-
-class Smartphone(Phone):
-    def smartphone_info(self):
-        return "This is a smartphone."
-
-smartphone = Smartphone()
-print(smartphone.info())
-print(smartphone.phone_info())
-print(smartphone.smartphone_info())
-📚 What I’m Learning
-Understanding classes and objects
-Writing clean, reusable code
-Inheritance and method overriding
-Multiple and multilevel inheritance
-Preparing for more advanced topics like:
-super()
-Polymorphism
-Encapsulation
-Project structuring
-🛠️ How to Run
-Clone the repository and run any .py file:
-git clone 
-https://github.com/YOUR-USERNAME/object-oriented-python-projects.git
-cd object-oriented-python-projects
-python filename.py
-🎯 Future Improvements
-Add more real-world OOP projects
-Implement super() across classes
-Add docstrings and type hints
-Add unit tests
-Build a full OOP mini-application
-🙌 About Me
-I’m Michael Carrington, transitioning from logistics into tech.
-I’m currently learning Python, building projects, and growing my backend 
-and AI engineering skills.
+The script will print the attributes of the two student objects, followed 
+by the output of the `info()` method:
